@@ -82,16 +82,6 @@ ol {
   width: 392px;
 }
 
-.content__card-link:focus{
-  outline: none;
-}
-
-.content__card-link_current:focus-visible,
-.content__card-link:focus-visible {
-  outline: #fff solid 1px;
-  outline-offset: 0;
-}
-
 .content__video-card:hover{
   text-decoration: underline;
 }
@@ -126,13 +116,12 @@ ol {
 .result__video-container{
   position: relative;
   width: 711px;
-  height: 386px;
   margin-bottom: 16px;
 }
 
 .result__video{
   width: 100%;
-  height: 100%;
+  height: 386px;
   object-fit: fill;
   object-position: center;
 }
@@ -161,6 +150,15 @@ ol {
   margin: 2px;
   color:inherit;
   text-decoration: none;
+}
+
+.content__card-link:focus{
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: #fff solid 1px;
+  outline-offset: 0;
 }
 
 .content__video-card-title{
@@ -226,7 +224,7 @@ fieldset{
   border-top: #FFF solid 1px;
   border-bottom: #FFF solid 1px;
   color: inherit;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -278,7 +276,7 @@ fieldset{
   background-color: #fff;
 }
 
-button{
+.button{
   border: #fff solid 1px;
   color: #FFF;
   color: inherit;
@@ -291,19 +289,19 @@ button{
   cursor: pointer;
 }
 
-button:active{
+.button:active{
   background: rgba(84, 80, 80, 1);
 }
 
-button:hover{
+.button:hover{
   text-decoration: underline;
 }
 
-button:focus{
+.button:focus{
   outline: none;
 }
 
-button:focus-visible{
+.button:focus-visible{
   outline: #fff solid 1px;
   outline-offset: 1px;
 }
