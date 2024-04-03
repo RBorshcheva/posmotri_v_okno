@@ -200,6 +200,10 @@ fieldset{
   cursor: pointer;
 }
 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: #fff solid 1px;
   outline-offset: 3px;
